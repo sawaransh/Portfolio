@@ -133,10 +133,12 @@ html {
     color: rgb(22,73,63);
 }
 
+
+
 @media screen and (max-width: 1024px)
 {
     .scale-1 {
-        transform: scale(0.5);
+        transform: scale(0.8);
         line-height: 0.2vh;
         
     }
@@ -153,9 +155,43 @@ html {
 
 {
     .font-1 {
-        font-size: 35px;
+        font-size: 40px;
     } 
+
+    .socials-links{
+        transform: scale(0.85)
+        
+    }
+
+  
 }
+
+@media screen and (max-width: 700px)
+
+{
+    .scale-1 {
+        transform: scale(0.6); 
+
+    }
+
+    .font-1 {
+        font-size: 30px;
+    } 
+
+    .socials-links{
+        transform: scale(0.65)
+        
+    }
+
+    .gif-box {
+        display: none;
+    }
+
+
+
+
+}
+
 
 .mittal {
     border-style:solid;
@@ -165,28 +201,37 @@ html {
     padding: 0px 0px;
     background-color: transparent;
     backdrop-filter: blur(10px);   
-    
-    
+    position: relative;
+    top: 2vh;
+    height: 20vh;
+    transform: 2s ease alternate scaleLoad;
+   
 }
 
+@keyframes scaleLoad {
+    from {
+        filter: opacity();
+    }
+}
 .p-nav {
     padding: 24px 60px;
 }
+
 
 /* HOBBIES */
 
 .container {
     display:flex;
     justify-content: center;
-    /* align-items:center; */
+    
     margin:auto;
     padding:4px 30px;
     position:relative;
-    top: 18rem;
+    top: 14vw;
     z-index: 10;
     height: 200px;
 
-    /* border-width: 2px; */
+    
 
     font-size: 3rem;
     color:rgb(170, 255, 248);
@@ -213,7 +258,7 @@ p {
     bottom:3px;
     line-height: 1.14;
 
-    animation: 3s ease 0s 1 alternate slideInFromBottom;
+    animation: 3s ease 0s 1 alternate slideInFromBottom;    
     animation-fill-mode: forwards;
 
 
@@ -228,6 +273,9 @@ p {
         transform: translateY(-487%);
     }
 }
+
+
+
 
 /* GIF */
 
@@ -345,11 +393,10 @@ p {
 }
   
 .yt:hover {
-    color:rgb(247, 101, 101);
+    color:#f76565;
     font-weight: 800;
     scale: 1.2;
     text-shadow: 0px 0px 20px black;
-    
 
 }
 
@@ -358,10 +405,13 @@ p {
 }
   
 .ig:hover {
-    color:rgb(241, 124, 193);
+    color:#f17cc1;
     font-weight: 800;
     scale: 1.2;
     text-shadow: 0px 0px 20px black;
+    
+
+
 
 
 }
