@@ -378,10 +378,15 @@ p {
 .socials-icons {
     display:flex;
     max-width: 100px;
+    height: 120px;
+    width: 120px;
     margin:auto;
+
+    padding: 10px;
     justify-content: center;
 
-    filter: invert(91%) sepia(20%) saturate(352%) hue-rotate(114deg) brightness(97%) contrast(91%);
+    fill: #B7EAE2;
+    /* filter: invert(91%) sepia(20%) saturate(352%) hue-rotate(114deg) brightness(97%) contrast(91%); */
 
 }
 
@@ -394,9 +399,12 @@ p {
   
 .yt:hover {
     color:#f76565;
+    fill: #f76565;
     font-weight: 800;
     scale: 1.2;
     text-shadow: 0px 0px 20px black;
+    
+    
 
 }
 
@@ -406,6 +414,7 @@ p {
   
 .ig:hover {
     color:#f17cc1;
+    fill:#f17cc1;
     font-weight: 800;
     scale: 1.2;
     text-shadow: 0px 0px 20px black;
@@ -422,6 +431,7 @@ p {
   
 .gh:hover {
     color:rgb(151, 194, 238);
+    fill:rgb(151, 194, 238);
     font-weight: 800;
     scale: 1.2;
     text-shadow: 0px 0px 20px black;
@@ -435,6 +445,7 @@ p {
   
 .dc:hover {
     color:rgb(88,101,242);
+    fill:rgb(88,101,242); 
     font-weight: 800;
     scale: 1.2;
     text-shadow: 0px 0px 20px black;
